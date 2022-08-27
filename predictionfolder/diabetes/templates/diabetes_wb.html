@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+.ip2 {
+    border-radius: 11px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+    margin-top: 15px;
+}
+    .ip3 {
+    border-radius: 11px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+</style>
+</head>
+      <svg height="70" class="wide ae-1 fromCenter" padding="0"></svg><i><h1>Diabetes Prediction System</h1></i>
+<body class="slides chain animated noPreload">
+
+
+      <form action='/predict' method="post" class="col s12">
+      
+
+
+          <input placeholder="Number of pregnancy" name="numpreg" id="numpreg" type="text" class="ip2">
+
+
+          <input id="glucose" name="glucose" placeholder="GlucoseConcentration"  type="text" class="ip3">
+
+            <br>
+
+          <input id="bp" name="bp" placeholder="BP" type="text" class="ip2">
+
+
+          <input id="thickness" name="thickness" placeholder="Thickness" type="text" class="ip3">
+            <br>
+
+
+          <input id="Insulin" name="Insulin" placeholder="Insulin" type="text" class="ip2">
+
+
+
+
+          <input id="BMI" name="BMI" placeholder="BMI" type="text" class="ip3">
+
+           <br>
+
+          <input id="diabpred" name="diabpred" placeholder="diabpred" type="text" class="ip2">
+
+
+
+
+          <input id="age" name="age" placeholder="age" type="text" class="ip3">
+           <br>
+      
+
+      <div class="row center">
+          <br>
+
+          <button type="submit" class="button blue rounded button-9 ae-7 fromCenter">Predict Probability</button>
+      </div>
+    </form>
+
+
+         <br>
+        {{pred}}
+        <br>
+
+
+
+</body>
+</html>

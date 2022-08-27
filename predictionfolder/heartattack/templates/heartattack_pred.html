@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    
+<style>
+.ip2 {
+    border-radius: 11px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+    margin-top: 15px;
+}
+    .ip3 {
+    border-radius: 11px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+</style>
+</head>
+    <title>Heart disease Prediction System</title>
+<body class="slides chain animated noPreload">
+
+  <svg height="10" class="wide ae-1 fromCenter" padding="0"></svg><i><h2 style="font-size:30px;"><b>Heart Disease Prediction System</b></h2></i>
+      <form action='/predict' method="post" class="col s12">
+      <div class="row">
+
+
+          <input placeholder="Age of Patient" name="age" id="age" type="number" class="ip2">
+
+          <input id="sex" name="sex" placeholder="1 for Male...0 for female"  type="text" class="ip3">
+
+            <br>
+
+           <input id="chestpain" name="chestpain" placeholder="Chest Pain" type="text" class="ip3">
+
+          <input id="bp" name="bp" placeholder="BP in rest" type="text" class="ip2">
+
+            <br>
+
+
+          <input id="cholestrol" name="cholestrol" placeholder="Cholestrol level" type="text" class="ip2">
+
+          <input id="sugar" name="sugar" placeholder="Blood Sugar Level" type="text" class="ip3">
+
+           <br>
+
+          <input id="ecg" name="ecg" placeholder="Rest ECG 0 for low risk..1 for high risk" type="text" class="ip2">
+
+
+
+
+          <input id="heartrate" name="heartrate" placeholder="Maximum HeartRate" type="text" class="ip3">
+           <br>
+
+      </div>
+
+      <div class="row center">
+          <br>
+
+          <button type="submit" class="button blue rounded button-9 ae-7 fromCenter">Predict Probability</button>
+      </div>
+    </form>
+
+        </div>
+
+      <br>
+        {{pred}}
+        <br>
+
+
+</body>
+</html>
